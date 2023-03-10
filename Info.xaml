@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp4.Info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="Info" Height="450" Width="400">
+    <UniformGrid Columns="1">
+        <Label Content="Название : " x:Name="lab_Name" MinHeight="40" Margin="10,20"/>
+        <Label Content="Дата создания : " x:Name="lab_TimeCreate" Margin="10,20" MinHeight="40"/>
+        <Label Content="Размер : " x:Name="lab_Size" MinHeight="40" Margin="10,20"/>
+        <Label Content="Последняя дата редактирования : " x:Name="lab_WriteTime" MinHeight="40" Margin="10,20"/>
+        <Button Margin="10,20" Content="Окей" Click="Button_Click"/>
+    </UniformGrid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp4.CreateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="CreateWindow" Height="350" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="10,25" VerticalAlignment="Top">
+            <Label Content="Название файла / папки" />
+        <TextBox Margin="10,25" MinHeight="50" VerticalAlignment="Top" x:Name="textBox_NameFile" />
+        </Grid>
+        <Grid Margin="10,25" Grid.Row = "0" VerticalAlignment="Bottom">
+            <Label Content="Тип файла(При создание папки,тип не указывается)"/>
+            <TextBox Grid.Row="0" Margin="10,25" MinHeight="50" VerticalAlignment="Top" x:Name="textBox_TypeFile"/>
+        </Grid>
+        <Button Grid.Row="1" Margin=" 30,20" Content="Создать" x:Name="btn_Create" Click="btn_Create_Click"/>
+    </Grid>
+</Window>

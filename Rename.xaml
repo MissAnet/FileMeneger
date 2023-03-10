@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp4.Rename"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="Rename" MaxHeight="200" MinHeight="200" MinWidth="400" MaxWidth="400">
+    <UniformGrid Columns="1">
+        <TextBox x:Name="textBox_TeName" Margin="10,20"/>
+
+        <UniformGrid Columns="2">
+            <Button Margin="30,20" Content="Ок" Click="reName_Click"/>
+            <Button Margin="30,20" Content="Отмена" Click="Close_Click"/>
+        </UniformGrid>
+    </UniformGrid>
+</Window>
